@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="joinOurParty">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>Join Our Party</title>
+	<link href="app/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="app/css/app.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<div ng-include="'app/partials/nav_top/nav_top.html'"></div>
+		<div class="page-wrapper"> 
+			<div class="col-md-10 col-md-offset-1" ng-view></div>
+		</div>
+		<div ng-include="'app/partials/nav-bottom/nav-footer.html'"></div>
+	</div>
+
+	<!--lib -->
+	<script src="app/lib/vendors/jquery-1.12.0.js"></script>
+	<script src="app/lib/vendors/bootstrap.min.js"></script>
+	<!--angular -->
+	<script src="app/lib/vendors/angular/angular.js"></script>
+	<script src="app/lib/vendors/angular/angular-route.js"></script>
+
+	<!--js -->
+	<script src="app/js/app.js"></script>
+
+	<!--home -->
+	<script src="app/modules/home/home.module.js"></script>
+	<script src="app/modules/home/home.controller.js"></script>
+	<script src="app/modules/home/home.service.js"></script>
+
+	<!--about -->
+	<script src="app/modules/about/about.module.js"></script>
+	<script src="app/modules/about/about.controller.js"></script>
+	<script src="app/modules/about/about.service.js"></script>
+
+	<!--resume -->
+	<script src="app/modules/resume/resume.module.js"></script>
+	<script src="app/modules/resume/resume.controller.js"></script>
+	<script src="app/modules/resume/resume.service.js"></script>
+
+	<!--nav_top -->
+	<script src="app/partials/nav_top/nav_top.module.js"></script>
+	<script src="app/partials/nav_top/nav_top.controller.js"></script>
+	<script src="app/partials/nav_top/nav_top.service.js"></script>
+</body>
+</html>
